@@ -1,0 +1,24 @@
+<div class="w-100 p-5" style="height: 600px;">
+    <div class="bg-white w-100" *ngIf="cubo">
+        <div class="w-25" style="float: left">
+            <img src="{{cubo.imagen}}" width="250px" height="250px"/>
+        </div>
+        <div class="w-100 bg-warning p-2" height="250px">
+            <h1 class="text-center">{{cubo.nombre}}</h1>
+            <h6 class="p-2">Marca: {{cubo.marca}}</h6>
+            <h6 class="p-2">Modelo: {{cubo.modelo}}</h6>
+            <h6 class="p-2">Color: {{cubo.color}}</h6>
+            <h6 class="p-2">Precio: {{cubo.precio}}€</h6>
+        </div>
+    </div>
+    <div class="p-5 mt-5 bg-white" *ngIf="comentarios">
+        <div class="w-100" *ngFor="let comentario of comentarios">
+            <h4>Id-Usuario: {{comentario.idUsuario}}</h4>
+            <h4>Fecha: {{comentario.fechaComentario}}</h4>
+            <h4>Comentario: {{comentario.comentario}}</h4>
+        </div>
+    </div>
+    <div class="p-5 mt-5 bg-white" *ngIf="!comentarios">
+        <h1 class="text-center">Sin comentarios</h1>
+    </div>
+</div>

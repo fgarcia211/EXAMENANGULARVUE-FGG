@@ -1,0 +1,9 @@
+<div class="w-100 p-5" style="height: 600px;">
+    <div class="p-5 bg-white" *ngIf="compras">
+        <div class="w-100 p-5 mt-5 border border-dark" *ngFor="let compra of compras">
+            <h4>ID de cubo comprado: {{compra.idCubo}}</h4>
+            <h4>ID del pedido: {{compra.idPedido}}</h4>
+            <h4>Fecha de compra: {{compra.fechaPedido}}</h4>
+        </div>
+    </div>
+</div>

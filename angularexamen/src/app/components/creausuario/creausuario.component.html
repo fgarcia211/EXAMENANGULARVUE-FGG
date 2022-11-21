@@ -1,0 +1,23 @@
+<form #formRegister="ngForm" class="text-center m-4">
+
+    <h1>Crea usuario:</h1>
+    <div class="mt-4">
+        <label>Introduce tu nombre</label>
+        <input type="text" #cajanombre name="cajanombre" required>
+    </div>
+    <div class="mt-4">
+        <label>Introduce tu correo</label>
+        <input type="text" #cajaemail name="cajaemail" required>
+    </div>
+    <div class="mt-4 mb-4">
+        <label>Introduce tu contraseña</label>
+        <input type="password" #cajapass name="cajapass" required>
+    </div>
+    <div class="mt-4 mb-4">
+        <label>Repite tu contraseña</label>
+        <input type="password" #cajapass2 name="cajapass2" required>
+    </div>
+    
+    <button (click)="insertaUsuario()">Crea usuario</button>
+
+</form>

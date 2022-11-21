@@ -1,0 +1,7 @@
+<div class="p-5" style="height: 3000px">
+    <div *ngFor="let cubo of cubos" style="width: 25%;margin-left: 5%; margin-top: 5%;height: 400px; float: left" class="bg-white border border-dark" [routerLink]="['/cubo/detalles',cubo.idCubo]">
+        <img src="{{cubo.imagen}}" class="w-100" style="height:300px"/>
+        <h4 style="color: blue" class="text-center p-2">{{cubo.nombre}}</h4>
+        <h4 style="color: blue" class="text-center p-2">{{cubo.precio}}€</h4>
+    </div>
+</div>

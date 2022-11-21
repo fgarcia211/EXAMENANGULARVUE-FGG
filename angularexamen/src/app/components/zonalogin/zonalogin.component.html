@@ -1,0 +1,14 @@
+<form #formlogin="ngForm" class="text-center m-4">
+    <h1>Inicia sesion:</h1>
+    <div class="mt-4">
+        <label>Introduce tu correo</label>
+        <input type="text" #cajaemail name="cajaemail">
+    </div>
+    <div class="mt-4 mb-4">
+        <label>Introduce tu contraseña</label>
+        <input type="password" #cajapass name="cajapass">
+    </div>
+    
+    <button (click)="iniciaSesion()">Iniciar sesion</button>
+
+</form>
